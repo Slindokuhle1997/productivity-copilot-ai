@@ -96,7 +96,7 @@ export type MeetingResult = {
   executiveSummary: string;
   keyPoints: string[];
   decisions: string[];
-  actionItems: Array<{ task: string; owner?: string; deadline?: string; status?: string }>;
+  actionItems: Array<{ task: string; owner?: string | undefined; deadline?: string | undefined; status?: string | undefined }>;
   deadlines: Array<{ item: string; date: string }>;
   followUps: string[];
 };
